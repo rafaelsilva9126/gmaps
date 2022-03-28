@@ -3,7 +3,7 @@ package stepdefinitions;
 import org.junit.Assert;
 import org.springframework.core.env.ConfigurableEnvironment;
 
-import constants.DataProperties;
+
 import constants.GoogleMapsProperties;
 import io.cucumber.java.After;
 import io.cucumber.java.en.Given;
@@ -16,15 +16,14 @@ public class GoogleMapsStepDefinition {
 	private GoogleMapsPageObjects googleMapsPageObjects;
 	private GoogleMapsProperties gMapsPropertiesObj;
 	private ConfigurableEnvironment gMapsProperties;
-	private DataProperties dataPropertiesObj;
+
 	private ConfigurableEnvironment dataProperties;
 
 	public GoogleMapsStepDefinition() {
 		this.googleMapsPageObjects = new GoogleMapsPageObjects();
 		this.gMapsPropertiesObj = new GoogleMapsProperties();
 		this.gMapsProperties = gMapsPropertiesObj.loadProperties();
-		this.dataPropertiesObj = new DataProperties();
-		this.dataProperties = dataPropertiesObj.loadProperties();
+
 	}
 
 	@Given("I entered on Google Maps page")

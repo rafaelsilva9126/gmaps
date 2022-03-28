@@ -79,10 +79,6 @@ public class BasePage {
 		return wait.until(ExpectedConditions.elementToBeClickable(By.xpath(xpath)));
 	}
 
-	public WebElement getElementByLinkText(String linkText) {
-		return wait.until(ExpectedConditions.elementToBeClickable(By.linkText(linkText)));
-	}
-
 	public WebElement getElementByName(String name) {
 		return wait.until(ExpectedConditions.elementToBeClickable(By.name(name)));
 	}

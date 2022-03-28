@@ -6,11 +6,6 @@ gmap:
     place: q
   id:
     searchIcon: searchbox-searchbutton
-  linkText:
-    customersMenu: Customers
-    company: Company
-    myprofileMenu: My Profile
-
   url: 
     googleMapslUrl: https://www.google.com.br/maps/
 
