@@ -1,4 +1,4 @@
-PHP FEATURE
+GOOGLE MAPS FEATURE
 
 --SELECTING A BROWSER
 
@@ -10,7 +10,7 @@ PHP FEATURE
 
 1. Run  by command line using the mvn test command on the path of the project (Maven installed is required.)
 2. Run by junit clicking on RunnerTest.Java and execute by junit
-3. Run by cucumber clicking on SearchFunctionality.featurefile
+3. Run by cucumber clicking on GoogleMaps.featurefile
 
 --HEADLESS MODE
 

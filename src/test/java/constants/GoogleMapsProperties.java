@@ -9,14 +9,14 @@ import builder.YAMLPropertySourceFactory;
 
 @Configuration
 @ConfigurationProperties(prefix= "yaml")
-@PropertySource(factory = YAMLPropertySourceFactory.class, value="phphwebelements.yaml")
-public class PhpProperties implements IProperties  {
+@PropertySource(factory = YAMLPropertySourceFactory.class, value="gmapswebelements.yaml")
+public class GoogleMapsProperties implements IProperties  {
 
 	@Override
 	public ConfigurableEnvironment loadProperties() {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
 		try {
-			context.register(PhpProperties.class);
+			context.register(GoogleMapsProperties.class);
 			context.refresh();
 			return context.getEnvironment();
 		} catch (Exception e) {
